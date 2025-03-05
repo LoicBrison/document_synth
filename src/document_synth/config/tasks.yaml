@@ -1,0 +1,27 @@
+classification_documents:
+  description: >
+    Parcourir les dossiers et identifier les documents selon leurs thématiques.
+  expected_output: >
+    Une classification claire des documents par catégorie.
+  agent: explorateur_documents
+
+synthese_documents:
+  description: >
+    Analyser le contenu des documents et produire une synthèse des points clés.
+  expected_output: >
+    Une synthèse détaillée et bien structurée.
+  agent: synthetiseur
+
+generation_contenu:
+  description: >
+    Rédiger de nouveaux documents spécialisés à partir des synthèses.
+  expected_output: >
+    Des documents professionnels correspondant aux thématiques demandées.
+  agent: generateur_contenu
+
+verification_contenu:
+  description: >
+    Vérifier et améliorer les documents générés pour assurer leur qualité.
+  expected_output: >
+    Des documents finalisés et optimisés.
+  agent: verificateur

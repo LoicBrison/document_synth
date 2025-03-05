@@ -1,0 +1,27 @@
+[project]
+name = "document_synth"
+version = "0.1.0"
+description = "document_synth using crewAI"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "crewai[tools]>=0.102.0,<1.0.0",
+    "pandas>=2.2.3",
+    "pymupdf>=1.25.3",
+    "python-docx>=1.1.2",
+]
+
+[project.scripts]
+document_synth = "document_synth.main:run"
+run_crew = "document_synth.main:run"
+train = "document_synth.main:train"
+replay = "document_synth.main:replay"
+test = "document_synth.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
